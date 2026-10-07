@@ -1,4 +1,32 @@
 'use strict';
+// Only the visitor's display preference is saved, locally on their device.
+const themeChoice = document.querySelector('#theme-choice');
+const deviceTheme = window.matchMedia('(prefers-color-scheme: dark)');
+let chosenTheme = 'system';
+try {
+  const saved = localStorage.getItem('leela-portfolio-theme');
+  if (saved === 'light' || saved === 'dark') chosenTheme = saved;
+} catch (_) { /* The control still works when browser storage is unavailable. */ }
+function applyTheme() {
+  const dark = chosenTheme === 'dark' || (chosenTheme === 'system' && deviceTheme.matches);
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#151c26' : '#f5f6f8';
+}
+themeChoice.value = chosenTheme;
+themeChoice.disabled = false;
+themeChoice.addEventListener('change', () => {
+  chosenTheme = themeChoice.value;
+  try {
+    if (chosenTheme === 'system') localStorage.removeItem('leela-portfolio-theme');
+    else localStorage.setItem('leela-portfolio-theme', chosenTheme);
+  } catch (_) { /* Do not block the rest of the portfolio. */ }
+  applyTheme();
+});
+deviceTheme.addEventListener('change', () => {
+  if (chosenTheme === 'system') applyTheme();
+});
+applyTheme();
+
 // Illustrative, fixed examples. This does not invoke the private Python project.
 const examples = {
   failures: {
