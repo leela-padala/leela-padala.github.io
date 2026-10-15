@@ -10,7 +10,7 @@ try {
 function applyTheme() {
   const dark = chosenTheme === 'dark' || (chosenTheme === 'system' && deviceTheme.matches);
   document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#151c26' : '#f5f6f8';
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#18221c' : '#f7f5ef';
 }
 themeChoice.value = chosenTheme;
 themeChoice.disabled = false;
@@ -31,15 +31,15 @@ applyTheme();
 const examples = {
   failures: {
     rows: [['09:41:02','demo.alex','failed'],['09:41:18','demo.alex','failed'],['09:41:36','demo.alex','failed'],['09:42:04','demo.alex','failed']],
-    note: 'Four failed attempts for one account in just over a minute. Check the source, the user’s usual activity, and whether a stale password or automated task could explain it.'
+    note: 'One account has four failed logins in about a minute. I would check where they came from and whether an old password or a scheduled task could explain them.'
   },
   spray: {
     rows: [['09:41:02','demo.alex','failed'],['09:41:18','demo.sam','failed'],['09:41:36','demo.jules','failed'],['09:42:04','demo.robin','failed']],
-    note: 'Failures across several accounts can suggest password spraying if they share a source and fit the time window. These rows alone do not show the source. Check that link before drawing a conclusion.'
+    note: 'Several accounts have failed logins close together. I would check whether they came from the same source. Someone may be trying one password across many accounts.'
   },
   success: {
     rows: [['09:41:02','demo.alex','failed'],['09:41:18','demo.alex','failed'],['09:41:36','demo.alex','failed'],['09:42:04','demo.alex','success']],
-    note: 'A success follows three failures. Was it the user correcting a password, or an unexpected login? Compare source, device, MFA activity, and the user’s normal behavior before escalating.'
+    note: 'A login succeeds after three failures. I would check the source, device, and extra sign-in checks to see whether the user corrected a password or someone else got in.'
   }
 };
 const patternButtons = document.querySelectorAll('[data-pattern]');
