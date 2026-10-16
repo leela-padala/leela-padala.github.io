@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="I'm Leela Padala, a cybersecurity analyst and security engineer. Explore my security projects, Python work, and open-source contributions.">
-  <meta name="theme-color" content="#f7f5ef">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Leela Padala | Cybersecurity &amp; Python">
   <meta property="og:description" content="Security experience, Python projects, and recent work in Prowler, pySigma, and Sigma.">
   <meta property="og:type" content="website">
@@ -22,58 +22,30 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="masthead wrap">
-  <a class="wordmark" href="#top" aria-label="Leela Padala, back to top"><span class="monogram" aria-hidden="true">lp.</span><span>Leela Padala</span></a>
+<header class="masthead">
+  <a class="wordmark" href="#top" aria-label="Leela Padala, back to top"><span class="monogram" aria-hidden="true">LP</span><span>Leela <br>Padala</span></a>
   <div class="header-controls">
-    <nav aria-label="Main navigation"><a href="#contributions">Work</a><a href="#background">Experience</a><a href="#contact">Contact</a></nav>
-    <div class="theme-picker"><label class="sr-only" for="theme-choice">Theme</label><select id="theme-choice" disabled><option value="system">Device theme</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+    <nav aria-label="Main navigation"><a href="#contributions">Selected work <span aria-hidden="true">↘</span></a><a href="#work">Projects <span aria-hidden="true">↘</span></a><a href="#background">Experience <span aria-hidden="true">↘</span></a><a href="#contact">Contact <span aria-hidden="true">↘</span></a></nav>
+    <div class="rail-footer"><a href="https://github.com/leela-padala">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/leela-padala/">LinkedIn <span aria-hidden="true">↗</span></a><div class="theme-picker"><label for="theme-choice">Theme</label><select id="theme-choice" disabled><option value="system">Device</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div>
   </div>
 </header>
 <main id="main">
   <section class="hero wrap" id="top" aria-labelledby="intro-title">
-    <div class="intro">
-      <p class="eyebrow">Cybersecurity analyst &amp; security engineer</p>
-      <h1 id="intro-title">Hi, I’m<br>Leela Padala<span class="accent">.</span></h1>
-      <p class="intro-text">I investigate security alerts, help fix security gaps, and build Python tools that make the work easier.</p>
-      <p class="location">Based in the Kansas City area.</p>
-      <div class="hero-actions"><a class="button" href="#contributions">See my work <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="#contact">Get in touch <span aria-hidden="true">↓</span></a></div>
-      <div class="profile-links"><a href="https://github.com/leela-padala">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/leela-padala/">LinkedIn <span aria-hidden="true">↗</span></a></div>
-    </div>
-    <aside class="background-note" aria-label="A little about me">
-      <span class="note-mark" aria-hidden="true">LP / 01</span>
-      <h2>A little about me</h2>
-      <p>My background is in security work for banking and financial technology teams.</p>
-      <dl>
-        <div><dt>Experience</dt><dd>Cyber Castrum LLP<span>Security roles · 2019–2024</span></dd></div>
-        <div><dt>Education</dt><dd>M.S. Computer Science<span>University of Missouri-Kansas City</span></dd></div>
-        <div><dt>Recent work</dt><dd>Python fixes for open-source security tools</dd></div>
-      </dl>
-      <a href="#background">More about my experience <span aria-hidden="true">↓</span></a>
-    </aside>
+    <div class="intro"><p class="eyebrow">Cybersecurity / Python</p><h1 id="intro-title">Leela <br>Padala</h1></div>
+    <div class="hero-details"><p class="role-title">Cybersecurity analyst <br>&amp; security engineer.</p><p class="intro-text">I investigate security alerts, help fix security gaps, and build Python tools that make the work easier.</p><p class="location">Based in the Kansas City area.</p><div class="hero-actions"><a class="button" href="#contributions">See my work <span aria-hidden="true">↓</span></a><a class="hero-contact" href="https://www.linkedin.com/in/leela-padala/">Let’s connect on LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+    <div class="focus-strip"><p>Areas I work in</p><ul aria-label="Areas of work"><li>Security operations</li><li>Cloud &amp; access</li><li>Python tools</li></ul></div>
   </section>
 
   <section class="contributions section wrap" id="contributions" aria-labelledby="contributions-title">
-    <div class="section-heading"><div><p class="eyebrow">01 / Open source</p><h2 id="contributions-title">What I’ve been working on</h2></div><p class="section-intro">Small fixes for real problems in security tools. These pull requests are open as of October 14, 2026.</p></div>
-    <article class="contribution">
-      <div class="work-type">Cloud security</div>
-      <div class="contribution-copy"><h3>Prowler</h3><p>My fixes keep Azure virtual machines and storage accounts in scan results when some settings are missing. Another fix checks network rules for internet access that was being missed.</p><div class="work-links"><a href="https://github.com/prowler-cloud/prowler/pull/13042">VM fix #13042 <span aria-hidden="true">↗</span></a><a href="https://github.com/prowler-cloud/prowler/pull/13031">Storage fix #13031 <span aria-hidden="true">↗</span></a><a href="https://github.com/prowler-cloud/prowler/pull/13029">Network fix #13029 <span aria-hidden="true">↗</span></a></div></div>
-      <span class="work-status">Open pull requests</span>
-    </article>
-    <article class="contribution">
-      <div class="work-type">Python</div>
-      <div class="contribution-copy"><h3>pySigma</h3><p>Loading a pipeline changed its saved settings and could break the next load. My fix keeps those settings unchanged and adds tests for repeated use.</p><a href="https://github.com/SigmaHQ/pySigma/pull/597" aria-label="View pull request #597: pySigma">View pull request #597 <span aria-hidden="true">↗</span></a></div>
-      <span class="work-status">Open pull request</span>
-    </article>
-    <article class="contribution">
-      <div class="work-type">Detection rules</div>
-      <div class="contribution-copy"><h3>Sigma</h3><p>Updated two web log rules to use the right header names and check empty headers correctly, so the rules can match the right events.</p><a href="https://github.com/SigmaHQ/sigma/pull/6445" aria-label="View pull request #6445: Sigma">View pull request #6445 <span aria-hidden="true">↗</span></a></div>
-      <span class="work-status">Open pull request</span>
-    </article>
+    <div class="section-heading"><div><p class="eyebrow">Open source</p><h2 id="contributions-title">Selected work</h2></div><p class="section-intro">Small fixes for real problems in security tools. These pull requests are open as of October 14, 2026.</p></div>
+    <article class="contribution"><div class="contribution-title"><p class="work-type">Cloud security</p><h3>Prowler</h3><p class="work-status">Open pull requests</p></div><div class="contribution-copy"><p>My fixes keep Azure virtual machines and storage accounts in scan results when some settings are missing. Another fix checks network rules for internet access that was being missed.</p><div class="work-links"><a href="https://github.com/prowler-cloud/prowler/pull/13042">VM fix #13042 <span aria-hidden="true">↗</span></a><a href="https://github.com/prowler-cloud/prowler/pull/13031">Storage fix #13031 <span aria-hidden="true">↗</span></a><a href="https://github.com/prowler-cloud/prowler/pull/13029">Network fix #13029 <span aria-hidden="true">↗</span></a></div></div></article>
+    <article class="contribution"><div class="contribution-title"><p class="work-type">Python</p><h3>pySigma</h3><p class="work-status">Open pull request</p></div><div class="contribution-copy"><p>Loading a pipeline changed its saved settings and could break the next load. My fix keeps those settings unchanged and adds tests for repeated use.</p><a href="https://github.com/SigmaHQ/pySigma/pull/597" aria-label="View pull request #597: pySigma">View pull request #597 <span aria-hidden="true">↗</span></a></div></article>
+    <article class="contribution"><div class="contribution-title"><p class="work-type">Detection rules</p><h3>Sigma</h3><p class="work-status">Open pull request</p></div><div class="contribution-copy"><p>Updated two web log rules to use the right header names and check empty headers correctly, so the rules can match the right events.</p><a href="https://github.com/SigmaHQ/sigma/pull/6445" aria-label="View pull request #6445: Sigma">View pull request #6445 <span aria-hidden="true">↗</span></a></div></article>
     <a class="all-work" href="https://github.com/search?q=is%3Apr+author%3Aleela-padala&amp;type=pullrequests">See all my pull requests <span aria-hidden="true">↗</span></a>
   </section>
 
   <section class="projects-band" id="work" aria-labelledby="work-title"><div class="section wrap">
-    <div class="section-heading"><div><p class="eyebrow">02 / Projects</p><h2 id="work-title">Things I’ve built</h2></div><p class="section-intro">A security tool I built for practice, plus a few projects where I worked with data in Python.</p></div>
+    <div class="section-heading"><div><p class="eyebrow">Built with Python</p><h2 id="work-title">Projects</h2></div><p class="section-intro">A security tool I built for practice, plus a few projects where I worked with data in Python.</p></div>
     <article class="lead-project" id="log-study">
       <div class="project-copy"><p class="work-type">Python · Security logs</p><h3>SOC Log Analyzer</h3><p>I built a Python tool to read login logs and flag patterns worth checking: repeated failed logins, attempts across several accounts, and a success after failures.</p><p>It reads CSV and JSONL files and writes a report you can use during an investigation.</p><p class="private-note">The code is private. This is a practice project.</p><div class="project-facts"><span>CSV &amp; JSONL input</span><span>JSON &amp; Markdown reports</span></div></div>
       <div class="log-demo">
@@ -93,13 +65,13 @@
   </div></section>
 
   <section class="experience section wrap" id="background" aria-labelledby="background-title">
-    <div class="section-heading"><div><p class="eyebrow">03 / Background</p><h2 id="background-title">My experience</h2></div><p class="section-intro">I’ve worked on security alerts, application security, cloud reviews, and access controls.</p></div>
+    <div class="section-heading"><div><p class="eyebrow">Background</p><h2 id="background-title">My experience</h2></div><p class="section-intro">I’ve worked on security alerts, application security, cloud reviews, and access controls.</p></div>
     <div class="timeline"><article><p class="timeline-date">May 2022 – June 2024</p><div><h3>Cyber Security Analyst</h3><p class="company">Cyber Castrum LLP</p><p>Reviewed alerts, investigated security issues, tracked fixes, and checked cloud settings and user access.</p></div></article><article><p class="timeline-date">May 2019 – May 2022</p><div><h3>Security Engineer</h3><p class="company">Cyber Castrum LLP</p><p>Worked on application and API security, reviewed logs, tested for security gaps, and helped teams build safer software.</p></div></article><article><p class="timeline-date">Education</p><div><h3>M.S. Computer Science</h3><p class="company">University of Missouri-Kansas City</p></div></article></div>
     <a class="all-work" href="https://www.linkedin.com/in/leela-padala/">View my full background on LinkedIn <span aria-hidden="true">↗</span></a>
   </section>
 
   <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap">
-    <div class="contact-grid"><div><p class="eyebrow">04 / Contact</p><h2 id="contact-title">Let’s talk<span>.</span></h2></div><div><p>I’m interested in cybersecurity analyst and security engineering roles. If you think I could help your team, I’d like to hear from you.</p><div class="contact-actions"><a class="button" href="https://www.linkedin.com/in/leela-padala/">Message me on LinkedIn <span aria-hidden="true">↗</span></a><a class="contact-secondary" href="https://github.com/leela-padala">Visit my GitHub <span aria-hidden="true">↗</span></a></div></div></div>
+    <div class="contact-grid"><div><p class="eyebrow">Contact</p><h2 id="contact-title">Get in touch.</h2></div><div><p>I’m interested in cybersecurity analyst and security engineering roles. If you think I could help your team, I’d like to hear from you.</p><div class="contact-actions"><a class="button" href="https://www.linkedin.com/in/leela-padala/">Message me on LinkedIn <span aria-hidden="true">↗</span></a><a class="contact-secondary" href="https://github.com/leela-padala">Visit my GitHub <span aria-hidden="true">↗</span></a></div></div></div>
     <footer><p>© 2026 Leela Padala</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
   </div></section>
 </main>
