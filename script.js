@@ -10,7 +10,7 @@ try {
 function applyTheme() {
   const dark = chosenTheme === 'dark' || (chosenTheme === 'system' && deviceTheme.matches);
   document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#15171b' : '#ffffff';
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#191b1e' : '#fcfcfc';
 }
 themeChoice.value = chosenTheme;
 themeChoice.disabled = false;
