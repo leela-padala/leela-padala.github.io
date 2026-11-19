@@ -374,3 +374,28 @@ th:last-child,td:last-child { padding-right: 0; text-align: right; }
   .contact-grid { padding-bottom: 25px; }
   .contact footer { border-top-color: #ccc; min-height: 50px; }
 }
+
+/* Credentials use the existing theme colors and typography. */
+.credential-highlight { margin-top: 18px; max-width: 460px; font-size: .875rem; line-height: 1.7; }
+.credentials-section { border-top: 1px solid var(--line); }
+.credential-intro { max-width: 440px; font-size: 1rem; line-height: 1.8; }
+.credential-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.credential-card { display: flex; flex-direction: column; min-width: 0; padding: 30px; background: var(--surface); border: 1px solid var(--line); border-top: 2px solid var(--accent); }
+.credential-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; }
+.credential-issuer { color: var(--accent); font-weight: 600; }
+.credential-meta,.credential-issuer { font-size: .875rem; }
+.credential-meta { color: var(--muted); }
+.credential-card h3 { font: 400 clamp(28px, 2.8vw, 34px)/1.15 var(--serif); letter-spacing: -.025em; margin-top: 20px; }
+.credential-official { color: var(--ink); font-size: 1rem; font-weight: 500; line-height: 1.6; margin-top: 18px; }
+.credential-description { font-size: 1rem; line-height: 1.75; margin-top: 14px; margin-bottom: 22px; }
+.credential-id { margin-top: auto; color: var(--muted); font-size: .8125rem; overflow-wrap: anywhere; }
+.credential-id span { font-family: var(--mono); }
+.credential-verify { align-self: flex-start; font-size: .875rem; margin-top: 8px; }
+@media(min-width:621px) and (max-width:1000px) { .masthead { flex-wrap: wrap; gap: 8px 24px; padding-block: 12px; } nav { gap: 22px; } }
+@media(max-width:620px) {
+  nav { flex-wrap: wrap; justify-content: flex-start; gap: 0 24px; }
+  .credential-grid { grid-template-columns: 1fr; gap: 20px; }
+  .credential-card { padding: 24px; }
+  .credential-card h3 { font-size: 30px; }
+}
+@media print { .credential-card { break-inside: avoid; } }
